@@ -6,12 +6,14 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D rb;
     Vector2 movement;
     Animator animatorController;
+    AudioSource footstepAudioSource;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animatorController = GetComponentInChildren<Animator>();
+        footstepAudioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame

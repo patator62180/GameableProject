@@ -19,6 +19,12 @@ public class PlayerStats : MonoBehaviour
         // When level starts, player has max life points
         lifeCount = initialLifeCount;
 
+        // If No Life Prefab Return Early
+        if(lifePrefab == null)
+        {
+            return;
+        }
+
         // Instantiate life prefabs in UI
         for (int i = 0; i < initialLifeCount; i++)
         {
