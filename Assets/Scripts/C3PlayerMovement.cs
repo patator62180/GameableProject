@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class C3PlayerMovement : MonoBehaviour
@@ -9,7 +6,7 @@ public class C3PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -26,7 +23,7 @@ public class C3PlayerMovement : MonoBehaviour
 
         MovePlayer(direction);
     }
-    
+
     private void MovePlayer(Vector2 direction)
     {
         transform.position += new Vector3(direction.x, direction.y, 0) * speed * Time.deltaTime;

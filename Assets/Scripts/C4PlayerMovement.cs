@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class C4PlayerMovement : MonoBehaviour
@@ -39,7 +37,7 @@ public class C4PlayerMovement : MonoBehaviour
 
         MovePlayer(direction);
     }
-    
+
     private void MovePlayer(Vector2 direction)
     {
         transform.position += new Vector3(direction.x, direction.y, 0) * speed * Time.deltaTime;
