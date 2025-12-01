@@ -17,6 +17,7 @@ public class C6Chest : C6PressKey
         // HANDS-ON: log a message in the console to show how many coins were collected in this chest,
         // then destroy the flower gameObject
         // Bonus: you can implement a simple inventory system to know how many coins were collected
+        // Bonus 2: make the chest a potential trap that would hurt the playable character
         Debug.Log(nbOfCoins + " coins collected!");
         Destroy(gameObject);
     }
