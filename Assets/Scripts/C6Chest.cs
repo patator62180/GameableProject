@@ -1,6 +1,7 @@
 using UnityEngine;
 
 // The chest holds a certain amount of coins that can be looted
+// The class inherits from C6PressKey, meaning it requires the 'E' key to be pressed to start the interaction
 public class C6Chest : C6PressKey
 {
     public int nbOfCoins = 3;

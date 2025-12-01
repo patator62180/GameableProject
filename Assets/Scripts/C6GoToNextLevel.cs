@@ -1,6 +1,7 @@
 using UnityEngine.SceneManagement;
 
 // This interaction loads another scene
+// The class inherits from C6PressKey, meaning it requires the 'E' key to be pressed to start the interaction
 public class C6GoToNextLevel : C6PressKey
 {
     public string nameOfNextLevel = "";
