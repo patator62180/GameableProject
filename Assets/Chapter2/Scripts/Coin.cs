@@ -4,14 +4,16 @@ namespace Chapter1
 {
     public class Coin : MonoBehaviour
     {
-        public static int counter = 0;
         private void OnTriggerEnter2D(Collider2D other)
         {
-            counter += 1;
-            CoinText.coinText.text = "Coins: " + counter;
-            Debug.Log("Collided");
-            Debug.Log(counter);
-            Destroy(this.gameObject);
+            if (other.tag == "Player")
+            {
+                int coinValue = GameManager.instance.GetCoinValue(); 
+                GameManager.instance.SetCoins(coinValue + 1);
+                Debug.Log("Collided with coin");
+                Debug.Log(coinValue);
+                Destroy(this.gameObject);
+            }
         }
     }
 }
