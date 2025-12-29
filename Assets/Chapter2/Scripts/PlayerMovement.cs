@@ -17,7 +17,6 @@ namespace Chapter1
 
         void Update()
         {
-            // 💡 Input gathering remains in Update()
             direction = new Vector2(
                 Input.GetAxisRaw("Horizontal"),
                 Input.GetAxisRaw("Vertical")
@@ -29,7 +28,7 @@ namespace Chapter1
             else
                 direction.x = 0;
 
-            // Animation logic stays in Update()
+            // Animation logic
             bool isMoving = direction.magnitude > 0;
             animator.SetBool("moving", isMoving);
             animator.SetFloat("moveX", direction.x);
