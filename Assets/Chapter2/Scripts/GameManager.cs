@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     public TextMeshProUGUI coinText;
-    public int coinValue = 0;
+    public int coins = 0;
     
     void Awake()
     {
@@ -20,17 +20,17 @@ public class GameManager : MonoBehaviour
     
     public void OnValidate()
     {
-        coinText.text = "Coins: " + coinValue;
+        coinText.text = "Coins: " + coins;
     }
 
     public void SetCoins(int coinValue)
     {
-        this.coinValue = coinValue;
+        this.coins = coinValue;
         coinText.text = "Coins: " + coinValue;
     }
 
     public int GetCoinValue()
     {
-        return coinValue;
+        return coins;
     }
 }
