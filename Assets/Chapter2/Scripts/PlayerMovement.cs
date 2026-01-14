@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Chapter1
+namespace Chapter2
 {
     public class PlayerMovement : MonoBehaviour
     {
@@ -30,7 +30,8 @@ namespace Chapter1
 
             // Animation logic
             bool isMoving = direction.magnitude > 0;
-            animator.SetBool("moving", isMoving);
+
+            animator.SetBool("isMoving", isMoving);
             animator.SetFloat("moveX", direction.x);
             animator.SetFloat("moveY", direction.y);
         }

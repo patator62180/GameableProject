@@ -1,7 +1,25 @@
 fileFormatVersion: 2
-guid: 7a887b2b2c8af204da603bef3c89157f
+guid: b8b1b65f5e7697440817b4ac38d8010c
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -5653878121705019575
+    second: PlayerSpritesheet_0
+  - first:
+      213: 1335251186984836748
+    second: PlayerSpritesheet_1
+  - first:
+      213: 3843040423100834259
+    second: PlayerSpritesheet_2
+  - first:
+      213: 385077577419708428
+    second: PlayerSpritesheet_3
+  - first:
+      213: 8570058877390158369
+    second: PlayerSpritesheet_4
+  - first:
+      213: 5776891531103278535
+    second: PlayerSpritesheet_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -34,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -48,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -67,12 +85,12 @@ TextureImporter:
   swizzle: 50462976
   cookieLightType: 0
   platformSettings:
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -80,7 +98,7 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -97,148 +115,157 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: New Piskel (7)_0
+      name: PlayerSpritesheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
-        width: 32
-        height: 32
+        x: 7
+        y: 68
+        width: 16
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c408c13d42fc6c842a607e993b640e17
-      internalID: 147618625
+      spriteID: 9476b68cdc36981b0800000000000000
+      internalID: -5653878121705019575
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel (7)_1
+      name: PlayerSpritesheet_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
-        height: 32
+        x: 39
+        y: 68
+        width: 16
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f51565cbe3b61e849ba5988c1c78737b
-      internalID: 2071067953
+      spriteID: c8e562e41e3c78210800000000000000
+      internalID: 1335251186984836748
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel (7)_2
+      name: PlayerSpritesheet_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
-        height: 32
+        x: 7
+        y: 36
+        width: 16
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 97b151c4f2fc8644a83bf92879b7b7c8
-      internalID: -1131893377
+      spriteID: 3d1646c47e8355530800000000000000
+      internalID: 3843040423100834259
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel (7)_3
+      name: PlayerSpritesheet_3
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
+        x: 41
+        y: 36
+        width: 13
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c771ee8956ec5294b8cd331e73a30fa3
-      internalID: 1507246257
+      spriteID: c08d1153402185500800000000000000
+      internalID: 385077577419708428
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel (7)_4
+      name: PlayerSpritesheet_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
+        x: 9
+        y: 4
+        width: 12
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 458ba910cde5f8d40810951313f5ae80
-      internalID: 1253245929
+      spriteID: 12af5039427fee670800000000000000
+      internalID: 8570058877390158369
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel (7)_5
+      name: PlayerSpritesheet_5
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
+        x: 41
+        y: 4
+        width: 13
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b2ff74f2c2d8812479c2cab33af14faa
-      internalID: -846214061
+      spriteID: 7c59f518d34ab2050800000000000000
+      internalID: 5776891531103278535
       vertices: []
       indices: 
       edges: []
       weights: []
     outline: []
+    customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
     nameFileIdTable:
-      New Piskel (7)_0: 147618625
-      New Piskel (7)_1: 2071067953
-      New Piskel (7)_2: -1131893377
-      New Piskel (7)_3: 1507246257
-      New Piskel (7)_4: 1253245929
-      New Piskel (7)_5: -846214061
+      PlayerSpritesheet_0: -5653878121705019575
+      PlayerSpritesheet_1: 1335251186984836748
+      PlayerSpritesheet_2: 3843040423100834259
+      PlayerSpritesheet_3: 385077577419708428
+      PlayerSpritesheet_4: 8570058877390158369
+      PlayerSpritesheet_5: 5776891531103278535
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
