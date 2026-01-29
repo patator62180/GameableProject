@@ -17,6 +17,11 @@ namespace Chapter3
             Vector2 direction = new Vector2();
 
             //Chapter 3.5 write your code here
+            //1. Change the x and y value to make the character move to the right when you press play
+            //2. Make the character go to the left
+            //3. make the character go up
+            //4. make the character go down
+            //5. make the character go diagonally
 
             direction.x = 0;
             direction.y = 0;

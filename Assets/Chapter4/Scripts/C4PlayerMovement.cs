@@ -1,39 +1,38 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class C4PlayerMovement : MonoBehaviour
 {
     public float speed = 1f;
     Animator animator;
     SpriteRenderer spriteRenderer;
+    InputAction moveAction;
 
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+
+        moveAction = InputSystem.actions.FindAction("Move");
     }
 
     // Update is called once per frame
     void Update()
     {
-        var direction = new Vector2();
+        // direction est un vector2 egal a l'input de notre joueur
+        // (1, 0) is on va vers la droite
+        // (0, -1) si on va vers le bas etc...
+        Vector2 direction = moveAction.ReadValue<Vector2>();
 
-        direction.x = Input.GetAxis("Horizontal");
-        direction.y = Input.GetAxis("Vertical");
+        // votre code ici
 
-        //your code here
-        // bool isMoving = false;
-        // animator.SetBool("replace with the name of your parameter", isMoving);
-        //end of your code here
+        bool isMoving = false;
+        animator.SetBool("remplacez avec le nom de votre parameter", isMoving);
 
-        //solution
-        bool isMoving = direction.magnitude > 0;
-        animator.SetBool("moving", isMoving);
-        //end of solution
+        //fin de votre code
 
-        //bonus
         spriteRenderer.flipX = direction.x > 0;
-        //end of bonus
 
         MovePlayer(direction);
     }
