@@ -4068,7 +4068,7 @@ Animator:
   m_GameObject: {fileID: 8058396020955894273}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 181f72074ae64cb4786ceb2e3ec3ff2a, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0d6873a1acdd3ff4a91e6ace9e0a5d77, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -4376,7 +4376,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
