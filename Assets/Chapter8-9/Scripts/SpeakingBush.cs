@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 public class SpeakingBush : MonoBehaviour
 {
@@ -7,7 +6,7 @@ public class SpeakingBush : MonoBehaviour
     public GameObject TextHint;
 
     private bool isPlayerColliding;
-    private PlayerMovement playerMovement;
+    private C8PlayerMovement playerMovement;
 
     private void Start()
     {
@@ -21,7 +20,7 @@ public class SpeakingBush : MonoBehaviour
         {
             TextHint.SetActive(true);
             isPlayerColliding = true;
-            playerMovement = collision.gameObject.GetComponent<PlayerMovement>();
+            playerMovement = collision.gameObject.GetComponent<C8PlayerMovement>();
         }
     }
 
@@ -43,12 +42,12 @@ public class SpeakingBush : MonoBehaviour
             {
                 TextHint.SetActive(false);
                 TextBox.SetActive(true);
-                playerMovement.enableMovement = false;
+                playerMovement.DisableMovement();
             }
             else
             {
                 TextBox.SetActive(false);
-                playerMovement.enableMovement = true;
+                playerMovement.EnableMovement();
             }
         }
     }
