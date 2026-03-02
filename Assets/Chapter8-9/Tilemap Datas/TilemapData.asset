@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af30764637985eb4c986153f7464360d, type: 3}
+  m_Name: TilemapData
+  m_EditorClassIdentifier: 
+  GrassTiles:
+  - {fileID: 11400000, guid: 5adce1edca27c2d4ea6e1ae69315b4a8, type: 2}
+  - {fileID: 11400000, guid: 9fc4198d5b978a64a95bd81a24b00e03, type: 2}
+  - {fileID: 11400000, guid: 9a2c32424207f404bbd0e5378f538dd2, type: 2}
+  - {fileID: 11400000, guid: 6cc1694218591ed4b88cc48d794f8afb, type: 2}
+  - {fileID: 11400000, guid: ce91a2f7a8531694186b6e92dee76bbd, type: 2}
+  - {fileID: 11400000, guid: d561b8e102a45cc4eb4d1a2e48818333, type: 2}
+  - {fileID: 11400000, guid: ca4cea117124743408173e2acac0b3c0, type: 2}
+  - {fileID: 11400000, guid: 11ec78140d3621946ad2d97f7ada5984, type: 2}
+  - {fileID: 11400000, guid: 41a8594573c530b4a9f7ef7f0bef5a16, type: 2}
+  - {fileID: 11400000, guid: de974056036db61439913b3cc3b9ca3e, type: 2}
+  - {fileID: 11400000, guid: 32df6ce85be9d4545b7eb0dea5e34468, type: 2}
+  - {fileID: 11400000, guid: d3981a667f2fefa409705360be45bb6e, type: 2}
+  - {fileID: 11400000, guid: 47cec44cc14ccb0429f4c51be92a3209, type: 2}
+  - {fileID: 11400000, guid: 49c725730854c524cb6bb1d8d35692fc, type: 2}
+  - {fileID: 11400000, guid: 8a275f9fbd051e64798d2ebc91d48d25, type: 2}
+  - {fileID: 11400000, guid: 943b94e506e48f344ad2db7c2a2725b8, type: 2}
+  - {fileID: 11400000, guid: 058065404c3aa484c916d0d2c43449a0, type: 2}
+  - {fileID: 11400000, guid: efd272c3ca8d42d42a68089d772539a0, type: 2}
+  SnowTiles:
+  - {fileID: 11400000, guid: d08174eafac11394fac6daee4546a35a, type: 2}
+  - {fileID: 11400000, guid: 8360fc7bf605fd0428955d14d7a15e53, type: 2}
+  - {fileID: 11400000, guid: 18937b75b252a484284e78cbded8a55e, type: 2}
+  - {fileID: 11400000, guid: 040d0871bbcfaa24cb924f51770396ca, type: 2}
+  - {fileID: 11400000, guid: 0be954f5764efbd4ca37724fd788416f, type: 2}
+  - {fileID: 11400000, guid: f6bae20d1f6214349b6f27ebaffdb311, type: 2}
+  - {fileID: 11400000, guid: c12ed1361e160804da6643cb3adfaf56, type: 2}
+  - {fileID: 11400000, guid: a7838069e26e3c54ba1ba0a90353c63e, type: 2}
+  - {fileID: 11400000, guid: 75d4ad5c366bcb445820952ed83921ad, type: 2}
+  - {fileID: 11400000, guid: 5fd0e48a932585d44b7f1875b94fe63b, type: 2}
+  IceTiles:
+  - {fileID: 11400000, guid: 01612c6fc05e52b47a003d857d3d897a, type: 2}
+  DirtTiles:
+  - {fileID: 11400000, guid: 1669b1be1f8c66b468576e51e248fe1d, type: 2}
+  - {fileID: 11400000, guid: f33bde4512f07564295c9d878ed044b1, type: 2}
+  - {fileID: 11400000, guid: b40de0ddb95864a43bb1f47921b47d16, type: 2}
+  - {fileID: 11400000, guid: 707ab6297aa491447a8b14ffdeb0f961, type: 2}
+  - {fileID: 11400000, guid: b44f9615ee2da1d42925f2492582cbdc, type: 2}
+  - {fileID: 11400000, guid: 340e8629a75e05f48b6c2f28ec8a906a, type: 2}
+  - {fileID: 11400000, guid: e609f63572f76f243b1e921d37f89157, type: 2}
+  - {fileID: 11400000, guid: e81f0f1a813ad364b860fa48907a1d75, type: 2}
+  - {fileID: 11400000, guid: 397ddfb66d7ab2447bd73eb23ebaeba4, type: 2}
+  - {fileID: 11400000, guid: e8a55a2edcbced840a333e763cc6f9aa, type: 2}
+  - {fileID: 11400000, guid: f1d8b5ef845973648939a5450feecc67, type: 2}
+  - {fileID: 11400000, guid: c9fedb5db5d0d4e42a23111f5ab7b4f4, type: 2}
+  - {fileID: 11400000, guid: df6dd5390d5e75647a23e07114f7970c, type: 2}

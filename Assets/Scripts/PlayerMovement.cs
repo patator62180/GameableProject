@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -6,14 +7,18 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D rb;
     Vector2 movement;
     Animator animatorController;
-    AudioSource footstepAudioSource;
+    C8AnimationCallbacks animationCallbacks;
+    [System.NonSerialized] public bool enableMovement;
+    public Tilemap tilemap;
+    public TilemapData tilemapData;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        animatorController = GetComponentInChildren<Animator>();
-        footstepAudioSource = GetComponent<AudioSource>();
+        animatorController = GetComponent<Animator>();
+        animationCallbacks = GetComponent<C8AnimationCallbacks>();
+        enableMovement = true;
     }
 
     // Update is called once per frame
@@ -35,10 +40,26 @@ public class PlayerMovement : MonoBehaviour
                 animatorController.SetBool("IsMoving", false);
             }
         }
+
+        var currentTile = (Tile) tilemap.GetTile(tilemap.WorldToCell(transform.position));
+        animationCallbacks.floortype = tilemapData.GetFloortype(currentTile);
     }
 
     void FixedUpdate()
     {
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        if(!enableMovement)
+        {
+            return;
+        }
+
+        if (animationCallbacks.floortype != EFloortype.Ice)
+        {
+            rb.linearVelocity = Vector2.zero;
+            rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        }
+        else
+        {
+            rb.AddForce(100 * movement * moveSpeed * Time.fixedDeltaTime);
+        }
     }
 }
