@@ -5,7 +5,6 @@ public class C8PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 1f;
     public Animator animatorController;
-    public C8AnimationCallbacks animationCallbacks;
     public Tilemap tilemap;
     public TilemapData tilemapData;
     private bool enableMovement;
@@ -25,11 +24,7 @@ public class C8PlayerMovement : MonoBehaviour
         movement.x = Input.GetAxis("Horizontal");
         movement.y = Input.GetAxis("Vertical");
 
-        animatorController.SetBool("IsMoving", movement != Vector2.zero);
-
-        var currentTile = (Tile) tilemap.GetTile(tilemap.WorldToCell(transform.position));
-        animationCallbacks.floortype = tilemapData.GetFloortype(currentTile);
-        
+        animatorController.SetBool("IsMoving", movement != Vector2.zero);        
     }
 
     void FixedUpdate()
@@ -39,7 +34,8 @@ public class C8PlayerMovement : MonoBehaviour
             return;
         }
 
-        if (animationCallbacks.floortype != EFloortype.Ice)
+        var currentTile = (Tile)tilemap.GetTile(tilemap.WorldToCell(transform.position));
+        if (tilemapData.GetFloortype(currentTile) != EFloortype.Ice)
         {
             rb.linearVelocity = Vector2.zero;
             rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
