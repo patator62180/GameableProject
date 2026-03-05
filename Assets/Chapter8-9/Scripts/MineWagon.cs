@@ -17,8 +17,9 @@ public class MineWagon : MonoBehaviour
 
         transform.Translate(direction * speed * Time.deltaTime, Space.World);
 
-        if ((transform.position - nextWaypoint.position).magnitude < 0.01)
+        if ((transform.position - nextWaypoint.position).magnitude < 0.1)
         {
+            transform.position = nextWaypoint.position;
             currentIndex = NextIndex;
         }
     }    

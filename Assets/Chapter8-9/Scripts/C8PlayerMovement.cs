@@ -29,6 +29,7 @@ public class C8PlayerMovement : MonoBehaviour
 
         var currentTile = (Tile) tilemap.GetTile(tilemap.WorldToCell(transform.position));
         animationCallbacks.floortype = tilemapData.GetFloortype(currentTile);
+        
     }
 
     void FixedUpdate()

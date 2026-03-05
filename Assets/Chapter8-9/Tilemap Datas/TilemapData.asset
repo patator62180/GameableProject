@@ -58,3 +58,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f1d8b5ef845973648939a5450feecc67, type: 2}
   - {fileID: 11400000, guid: c9fedb5db5d0d4e42a23111f5ab7b4f4, type: 2}
   - {fileID: 11400000, guid: df6dd5390d5e75647a23e07114f7970c, type: 2}
+  WoodTiles:
+  - {fileID: 11400000, guid: 84fc002288e058d41887aabc4a138d98, type: 2}
